@@ -52,4 +52,10 @@ window.addEventListener('load', () => {
         }
         timeChange();
     })
+    // Some recursion code challenge, this is not part of the project
+//     function exp(base,pow){
+//       if(pow === 0) return1;
+//         return base *exp(base,pow -1);
+//     }
+//     console.log(exp(12,2));
 })
