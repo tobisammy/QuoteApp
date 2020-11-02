@@ -19,19 +19,20 @@ window.addEventListener('load', () => {
     const button = document.querySelector('button');
     const h3 = document.querySelector('h3');
 
-    function timeChange() { // const date = new Date().toDateString();
+    function timeChange() {
+        // const date = new Date().toDateString();
         // const date = new Date().toUTCString();
         let d = new Date();
         let hr = d.getHours();
         // let min = d.getMinutes();
 
         const time = document.querySelector('.time');
-        if (hr > 24 && hr < 12) {
+       if (hr < 12) {
             time.innerText = 'morning';
-        } else if (hr > 12 && hr < 17) {
+        } else if (hr >= 12 && hr <= 17) {
             time.innerText = 'afternoon';
         } else if (hr > 17 && hr < 24) {
-            time.innerText = 'evening';
+            time.innerText = 'eveining';
         } else {
             time.innerText = 'day';
         }
